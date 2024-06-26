@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:training/datamodel.dart';
+import 'package:training/model/datamodel.dart';
 
 class ItemDetail extends StatelessWidget {
   final ItemDataModel itemDataModel;
 
-  const ItemDetail({Key? key, required this.itemDataModel}) : super(key: key);
+  const ItemDetail({super.key, required this.itemDataModel});
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +17,14 @@ class ItemDetail extends StatelessWidget {
         children: [
           Image.asset(itemDataModel.Image,
                   width: 350, height: 300),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Text(itemDataModel.price,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-          SizedBox(
+          Text(itemDataModel.price,style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+          const SizedBox(
             height: 10,
           ),
-          Text(itemDataModel.desc,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
+          Text(itemDataModel.desc,style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
         ],                                  
       ),
         ),

@@ -26,20 +26,7 @@ evalPassword(value) {
 
   }
 }
-// evalConfirmPass(value) {
 
-//   if (value.length == 0) {
-//     return "password is Required";
-//   }
-//    else if (value != model.password) {
-//                         return 'Passwords do not match';
-//                       }
-    
-//   else{
-//     return null;
-
-//   }
-// }
 evalPhone(value) {
   RegExp regex = RegExp(r'^(?=.*?[0-9]).{10}$');
   if (value.length == 0) {
